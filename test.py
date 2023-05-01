@@ -7,8 +7,8 @@ print(addition(100,100))
 
 # Write a Python function that takes a string as input and returns the string reversed  
 def str(word):
-   return [::-1]
-
+   word=word[::-1]
+   return word
 print(str('Wonderful'))
     
    
@@ -53,7 +53,7 @@ def capitalizes(word):
     capitalize =  word.upper()
     return capitalize
 
-print(word(world))
+print(capitalizes('world'))
 
 
 

@@ -7,8 +7,8 @@ print(addition(100,100))
 
 # Write a Python function that takes a string as input and returns the string reversed  
 def str(word):
-   word=word[::-1]
-   return word
+   w=word[::-1]
+   return w
 print(str('Wonderful'))
     
    
@@ -20,19 +20,27 @@ def numb(lists):
 sum= [1,3,4,5,6,8]
 print(sum)
 
+def number(numbers):
+   sum=0
+   for n in numbers:
+      sum+=n
+      return sum
+print(number([1,2,3,4,5]))
+      
+
 
 
 # Write a Python function that takes a list of integers as input and returns a new list 
 # with all the even numbers removed.
 def even():
    numbers = []
-   x= range(0.10)
+   x= range(0,10)
    for i in x:
       if i % 2 == 0:
-         numbers.append(i)
-         return numbers
+        numbers.append(i)
+        return numbers
 
-print(even)
+print(even())
 
 
 # Write a Python function that takes a list of integers as input and returns the 
@@ -41,19 +49,27 @@ def many(nums):
     highest_value= 0
     for num in nums:
         if num > highest_value:
-            return highest_value
+         return highest_value
     
-print(many[45,89,34,89,9])
+print(many([45,89,34,89,9]))
+
+def highest(nums):
+   for n in nums:
+         n=max(nums)
+         return n
+print(highest([1,3,5]))
    
 
 
 # Write a Python function that takes a list of strings as input and returns a new
 # list with all the strings capitalized.
-def capitalizes(word):
-    capitalize =  word.upper()
-    return capitalize
 
-print(capitalizes('world'))
+def capitalizes(word):
+    capitalize =  word.capitalize()
+    return capitalizes
+
+print(capitalizes(['world','Well','better']))
+
 
 
 
